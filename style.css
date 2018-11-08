@@ -1,0 +1,291 @@
+/*
+Theme Name: FM News
+Theme URI: -
+Author: Febrizki Mawikere
+Author URI: -
+Description: First theme created by Febrizki Mawikere.
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: black, brown, orange, tan, white, yellow, light, one-column, two-columns, right-sidebar, flexible-width, custom-header, custom-menu, editor-style, featured-images, microformats, post-formats, rtl-language-support, sticky-post, translation-ready
+Text Domain: fmnews
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Oxygen:400,700');
+
+body {
+    font-family: 'Oxygen';
+    background-color:#fafafa;
+    font-size:10pt;
+}
+a:focus{
+    text-decoration:none;
+}
+p{
+    line-height:150%;
+}
+header{
+    margin-top:50px;
+}
+.search{
+    border-collapse: collapse;
+    border:0;
+    padding:1px;
+}
+.branding > a:hover{
+    text-decoration: none;
+    color:#000;
+}
+.branding > a{
+    font-size:3.5em;
+    color:#660000;
+    transition: 0.4s ease;
+}
+.navbar, .navbar-default{
+    border-radius:0;
+    background-color:#660000;
+    border:0;
+}
+.navbar-nav {
+    width: 100%;
+    text-align: center;
+}
+.navbar-nav > li {
+    float: none;
+    display: inline-block;
+}
+.navbar-default .navbar-nav>li>a{
+    font-weight:600;
+    color:#FFF;
+    transition:0.2s ease;
+}
+.navbar-default .navbar-nav>li>a:hover{
+    color:#FFF;
+    background-color:#880000;
+}
+.navbar-default .navbar-nav>li.active>a{
+    font-weight:600;
+    color:#FFF;
+    transition:0.2s ease;
+    background-color:#880000;
+}
+.navbar-default .navbar-nav>li.active>a:hover{
+    color:#FFF;
+    background-color:#880000;
+}
+.navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover{
+    background-color:#770000;
+    color:#FFF
+}
+.dropdown-menu{
+    border-radius:0;
+    background-color:#770000;
+    border:0;
+    padding:0;
+}
+.dropdown-menu>li>a{
+    color:#FFF;
+    line-height:30px;
+}
+.dropdown-menu>li>a:focus, .dropdown-menu>li>a:hover{
+    color:#FFF;
+    background-color:#880000;
+    line-height:30px;
+}
+.box{
+    border-top:7px solid #97000B;
+    background-color:#FFF;
+}
+.box-header{
+    text-transform:uppercase;
+    font-weight: bold;
+    padding-left:0;
+    margin-bottom:20px;
+}
+#aktual {
+    list-style-type:none;
+    display:block;float:left;
+    padding-left:0;
+}
+#aktual > li{
+    display:block;
+    width:100%;float:left;
+    margin-bottom:10px;
+}
+#aktual > li > .newsthumb{
+    display:block;float:left;
+    height:55px;width:55px;
+    margin-right:10px;
+}
+#aktual > li > .text{
+    display:block;margin-left:70px;
+}
+#aktual > li > .text > .newstime , .newstitle{
+    display:block;width:100%;
+}
+#aktual > li > .text > .newstime{
+    font-size:0.8em;
+    font-style:italic;
+}
+#aktual > li > .text > .newstitle{
+    font-weight:bold;
+    font-size:1.15em;
+    color:#660000;
+}
+#aktual > li > .text > .newstitle:hover{
+    color:#220000;
+    text-decoration:none;
+}
+.berita{
+    float:left;
+    padding-bottom:20px;
+    margin-bottom:10px;
+}
+.berita-single{
+    padding-bottom:0px;
+    border-bottom:1px solid #ccc;
+    margin-bottom:10px;
+}
+.berita-single > .berita-thumbnail > img{
+    width:100%;height:400px;float:left;
+}
+.berita-single > .berita-judul{
+    font-size:1.6em;
+    color:#660000;
+    font-weight:700;
+    width:100%;float:left;
+    margin-top:15px;
+}
+.berita-single > p{
+    font-size:1.2em;
+    text-align:left;
+}
+.berita-first{
+    padding-bottom:0px;
+    border-bottom:1px solid #ccc;
+    margin-bottom:10px;
+}
+.berita-first > .berita-thumbnail > img{
+    width:100%;height:250px;float:left;
+}
+.berita-first > .berita-judul{
+    font-size:2em;
+    color:#660000;
+    font-weight:700;
+    width:100%;float:left;
+}
+.berita-judul:hover{
+    color:#220000;
+    text-decoration:none;
+}
+/*.berita-tag, .berita-waktu{ margin-bottom:15px; }*/
+.berita-tag a{
+    font-size:0.9em;
+    color:#660000;
+    text-transform: uppercase;
+}
+.berita-waktu{
+    font-size:0.9em;
+    color:#555555;
+    font-style:italic;
+}
+.berita-deskripsi{
+    margin-top:10px;
+}
+.berita-item{
+    float:left;
+    width:100%;
+    padding:5px 0 5px 0;
+}
+.berita-item > .berita-thumbnail { float:left; }
+.berita-item > .berita-thumbnail > img{
+    float:left;width:100px;height:60px;margin-right:10px;
+}
+.berita-item > .berita-waktu{
+    font-size:0.8em;
+}
+.berita-item > .berita-waktu, .berita-judul{
+    width:100%;
+}
+.berita-item > .berita-judul{
+    font-size:1.2em;
+    display:block;
+    color:#660000;font-weight:700;
+}
+.topik-pilihan{
+    list-style-type:none;
+    padding-left:0;
+}
+.topik-pilihan li{
+    display:block;
+    width:100%;float:left;
+    margin-bottom:10px;
+    font-size:1.2em;
+    line-height:50px;
+    border-bottom:1px solid #ccc;
+}
+.topik-pilihan li span.number{
+    display:inline-block;
+    padding:0 20px 0 20px;
+    font-weight:700;
+}
+.topik-pilihan li a{
+    color:#000;
+}
+.topik-pilihan li a:hover{
+    color:#000;
+    text-decoration: none;
+}
+.carousel-control {
+    position: absolute;
+    top: 40%;
+    left: 15px;
+    width: 40px;
+    height: 40px;
+    margin-top: -20px;
+    font-size: 60px;
+    font-weight: 100;
+    line-height: 30px;
+    color: #ffffff;
+    text-align: center;
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+}
+.carousel-control.right {
+    right: 15px;
+    left: auto;
+}
+.carousel-caption {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 15px;
+    background: #333333;
+    background: rgba(0, 0, 0, 0.75);
+}
+.carousel-caption p {
+    margin-bottom: 0;
+}
+
+@media screen and (max-width: 700px){
+     .carousel-caption p {
+        font-size: 13px;
+    }
+    .carousel-caption {
+    background: rgba(0, 0, 0, 0.55);
+    }
+    .carousel-control {
+        top: 20%;
+    }
+}
+
+footer{
+    margin:50px 0 30px 0;width:100%;float:left;
+    padding-bottom:30px;
+    border-top:7px solid #97000B;
+    background-color:#FFF;
+}
